@@ -6,16 +6,15 @@
     <h2 class="subtitulo">¿Ya tienes una cuenta?</h2> 
 
     <div class="campo">
-  <input type="text" id="usuario" name="usuario" class="input-item" placeholder="Usuario:" />
-</div>
+        <input type="text" id="usuario" name="usuario" class="input-item" placeholder="Usuario:" />
+    </div>
 
-<div class="campo">
-  <input type="password" id="contrasena" name="contrasena" class="input-item" placeholder="Contraseña:" />
-</div>
-
-    <br><br>
-    
-    <button class="button-55" role="button" >Iniciar sesión</button>
+    <div class="campo">
+      <input type="password" id="contrasena" name="contrasena" class="input-item" placeholder="Contraseña:" />
+    </div>
+  
+    <br>
+    <button class="button-55" role="button" (click)="irAInicio()">Iniciar sesión</button>
     <button class="button-55" role="button">Crear cuenta</button>
   </div>
 </div>
