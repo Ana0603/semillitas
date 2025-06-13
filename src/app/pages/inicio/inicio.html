@@ -1,1 +1,40 @@
-<p>inicio</p>
+<div class="fondo-inicio">
+  <div class="container">
+    <div class="header">
+      <div class="user-info">
+        <div class="user-avatar"></div>
+        <div>
+          <p><strong>Bienvenido, Juan</strong></p>
+          <p class="user-details">Nivel: 1 &nbsp; | &nbsp; Eco puntos: 10</p>
+        </div>
+          <div class="interruptor">
+            <div class="dark-mode-toggle">
+            <input type="checkbox" id="toggle-dark" (change)="toggleDarkMode()"/>
+            <label for="toggle-dark">
+              <span class="icon">🌞</span>
+              <span class="slider"></span>
+              <span class="icon">🌜</span>
+            </label>
+          </div>
+        </div>
+      </div> 
+    </div>  
+    
+    <div class="character-card">
+      <div class="character-label">
+        <p>Semillita Nora ✏️</p>
+        <img src="assets/img/btn1.png" alt="Misiones" class="character-img" />
+      </div>
+      <div class="character-content">
+        <img [src]="characterImage" alt="Semillita Nora" class="character-img" />
+        <div class="progress-container">
+          <div class="star">⭐</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="height: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+  </div>
+</div>
