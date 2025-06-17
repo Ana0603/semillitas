@@ -1,19 +1,25 @@
 import { Component } from '@angular/core';
 import { SharedService } from '../../services/shared.service';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navegacion',
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './navegacion.html',
-  styleUrls: ['./navegacion.css']
+  styleUrls: ['./navegacion.css'],
 })
 export class NavegacionComponent {
-
-  constructor(private sharedService: SharedService) {}
+  constructor(private sharedService: SharedService, private router: Router) {}
 
   cambiarImagen() {
     this.sharedService.changeImage('assets/img/animate3.gif');
     setTimeout(() => {
       this.sharedService.changeImage('assets/img/animate2.gif');
     }, 4000);
+  }
+
+  irAMinijuego() {
+    this.router.navigate(['/loading-minijuego']);
   }
 }
