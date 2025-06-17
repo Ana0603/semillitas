@@ -1,11 +1,14 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 import { NavegacionComponent, } from '../../componentes/navegacion/navegacion';
 import { SharedService } from '../../services/shared.service';
+import { Misiones } from '../../componentes/misiones/misiones';
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [NavegacionComponent],
+  imports: [NavegacionComponent, Misiones, CommonModule],
   templateUrl: './inicio.html',
   styleUrl: './inicio.css',
   encapsulation: ViewEncapsulation.None,
@@ -14,6 +17,7 @@ export class Inicio {
   
   characterImage: string = 'assets/img/animate2.gif';
   isDarkMode = false;
+  mostrarMisiones = false;
 
   constructor(private sharedService: SharedService) { } 
 
@@ -24,12 +28,20 @@ export class Inicio {
   }
 
   toggleDarkMode() {
-  this.isDarkMode = !this.isDarkMode;
+    this.isDarkMode = !this.isDarkMode;
 
-  if (this.isDarkMode) {
-    document.body.classList.add('dark-mode');
-  } else {
-    document.body.classList.remove('dark-mode');
+    if (this.isDarkMode) {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
   }
-}
+
+  abrirMisiones() {
+    this.mostrarMisiones = true;
+    console.log('Abriendo misiones...');
+  }
+  cerrarMisiones() {
+    this.mostrarMisiones = false;
+  }
 }

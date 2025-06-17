@@ -23,7 +23,8 @@
     <div class="character-card">
       <div class="character-label">
         <p>Semillita Nora ✏️</p>
-        <img src="assets/img/btn1.png" alt="Misiones" class="character-img" />
+        <img src="assets/img/btn1.png" alt="Misiones" class="character-img" (click)="abrirMisiones()"/>
+        <app-misiones *ngIf="mostrarMisiones" (cerrar)="cerrarMisiones()"></app-misiones>
       </div>
       <div class="character-content">
         <img [src]="characterImage" alt="Semillita Nora" class="character-img" />
@@ -37,6 +38,7 @@
     </div>  
 
     <app-navegacion></app-navegacion>
+    
 
   </div>
 </div>
