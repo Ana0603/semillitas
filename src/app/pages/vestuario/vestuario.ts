@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-vestuario',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './vestuario.html',
   styleUrl: './vestuario.css'
 })
