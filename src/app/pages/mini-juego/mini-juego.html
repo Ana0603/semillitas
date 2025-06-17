@@ -1,1 +1,31 @@
-<p>mini-juego works!</p>
+<div class="fondo-inicio2">
+  <div class="container2">
+    <div class="header">
+      <div class="title-container">
+        <h2 class="title">Mini Juego</h2>
+        <p>Nivel: 1   |   Eco puntos: 10</p>
+      </div>
+      <div class="button-container">
+        <button routerLink="/inicio" class="close-button">X</button>
+      </div>
+    </div>
+
+    <router-outlet></router-outlet>
+      
+    <div class="level-map">
+      <div class="levels-container">
+        <div class="level" *ngFor="let cap of capitulos">
+          <button
+            [routerLink]="[cap.route]"
+            fill="solid"
+            class="level-button"
+          >
+            {{ cap.numero }}
+          </button>
+          <div class="level-title">{{ cap.titulo }}</div>
+        </div>
+      </div>   
+    </div>
+
+  </div>
+</div>

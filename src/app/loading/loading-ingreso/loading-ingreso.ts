@@ -14,6 +14,6 @@ export class LoadingIngreso {
   ngOnInit(): void {
     setTimeout(() => {
       this.router.navigate(['/inicio']);
-    }, 4000); 
+    }, 4000);  
   }
-}
+} 
