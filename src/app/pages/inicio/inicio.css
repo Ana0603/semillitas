@@ -59,7 +59,7 @@
 .character-img {
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 300px;
+  height: 320px;
 }
 
 .progress-container {
@@ -166,11 +166,6 @@
 
 .dark-mode-toggle input:checked + label .slider {
   left: 40px;
-}
-
-/* Modo oscuro */
-body.dark-mode {
-  background-color: #182236;
 }
 
 body.dark-mode .container {

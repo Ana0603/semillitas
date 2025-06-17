@@ -1,10 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { NavegacionComponent, } from '../../componentes/navegacion/navegacion';
 import { SharedService } from '../../services/shared.service';
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [],
+  imports: [NavegacionComponent],
   templateUrl: './inicio.html',
   styleUrl: './inicio.css',
   encapsulation: ViewEncapsulation.None,

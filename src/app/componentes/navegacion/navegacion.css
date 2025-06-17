@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    width: 80vh;
+    height: 30%;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 80vh;
+  gap: 3px;
+}
+
+.nav-btn {
+  cursor: pointer;
+}
+
+.nav-btn img {
+  width: 85px;
+  height: auto;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
+  scale: 1;
+  transition: scale 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.nav-btn img:hover {
+  scale: 1.05;
+  filter: drop-shadow(0 4px 10px rgba(77, 77, 77, 0.3));
+}
