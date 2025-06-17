@@ -13,4 +13,31 @@
   height: 80vh;
   border-radius: 20px;
   justify-content: space-between;
+  position: relative;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.title {
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.close-button {
+  background-color: red;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 100%;
+  text-align: right;
+  border: none;
+  position: absolute; 
+  top: 24px;          
+  right: 24px; 
+  font-size: 28px; 
+  cursor: pointer;      
 }
