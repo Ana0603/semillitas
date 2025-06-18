@@ -3,10 +3,31 @@
         <div class="header">
       <div class="title-container">
         <h2 class="title">Armario</h2>
+        <p>💰 Dinero: $10ed</p>
       </div>
       <div class="button-container">
         <button routerLink="/inicio" class="close-button">X</button>
       </div>
     </div>
+
+     <div class="personaje">        
+        <img
+          [src]="'assets/img/' + ropaActual"
+          class="ropa"
+          [ngClass]="{'ropa-animada': ropaAnimada}"
+          alt="ropa actual"
+        />
+     </div>
+
+    <div class="botones-ropa">
+       <button
+      *ngFor="let ropa of ropaOpciones"
+      (click)="cambiarRopa(ropa)"
+      [ngClass]="{'seleccionado': ropa === ropaActual}"
+    >
+      <img [src]="'assets/img/' + ropa" [alt]="ropa" />
+      </button>
+    </div>
+
     </div>
 </div>

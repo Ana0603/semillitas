@@ -23,9 +23,24 @@ header {
   justify-content: space-between;
 }
 
+.title-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
 .title {
   font-weight: bold;
   margin-left: 20px;
+}
+
+p {
+  margin-left: 20px;
+  width: 150px;
+  background-color: #e7dace;
+  padding: 4px;
+  border-radius: 10px;
+  font-size: 15px;
 }
 
 .close-button {
@@ -40,4 +55,77 @@ header {
   right: 24px; 
   font-size: 28px; 
   cursor: pointer;      
+}
+
+.personaje {
+  background-image: url('/assets/img/armario.png'); 
+  background-size: cover;
+  background-position: center;   
+  position: relative;
+  width: 370px;
+  height: 400px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.personaje img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.botones-ropa {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.botones-ropa button {
+  background: blanchedalmond;
+  border: 4px;
+  padding: 0;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botones-ropa button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+}
+
+.botones-ropa button:active {
+  background-color: rgb(248, 212, 157);
+}
+
+.botones-ropa button.seleccionado {
+  border: 2px solid #e0a765;
+  background: #ffebcd;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+  transform: scale(1.1);
+}
+
+.botones-ropa img {
+  width: 90px;
+  height: 90px;
+}
+
+.ropa-animada {
+  animation: zoomIn 0.3s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
