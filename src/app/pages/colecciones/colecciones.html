@@ -1,12 +1,31 @@
 <div class="fondo-inicio">
-    <div class="container">
-        <div class="header">
-      <div class="title-container">
-        <h2 class="title">Colecciones</h2>
+  <div class="container">
+      <div class="header">
+        <div class="title-container">
+          <h2 class="title">Colecciones</h2>
+        </div>
+        <div class="button-container">
+          <button routerLink="/inicio" class="close-button">X</button>
+        </div>
       </div>
-      <div class="button-container">
-        <button routerLink="/inicio" class="close-button">X</button>
+
+    <div class="galeria-container">
+      <h2>{{ seleccionada.titulo }}</h2>
+      <div class="imagen-principal">
+        
+        <img [src]="seleccionada.src" alt="Imagen seleccionada" />
+        <div class="texto-info">
+          
+          <p>{{ seleccionada.descripcion }}</p>
+          <small>{{ seleccionada.fecha }}</small>
+        </div>
+      </div>
+
+      <div class="miniaturas">
+        <button *ngFor="let imagen of imagenes" (click)="seleccionarImagen(imagen)">
+          <img [src]="imagen.src" alt="Miniatura" />
+        </button>
       </div>
     </div>
-    </div>
+  </div>
 </div>

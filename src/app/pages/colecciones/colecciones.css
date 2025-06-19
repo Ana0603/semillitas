@@ -41,3 +41,68 @@ header {
   font-size: 28px; 
   cursor: pointer;      
 }
+
+.galeria-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.imagen-principal {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  background: #fef9f0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.imagen-principal img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto-info {
+  max-width: 300px;
+}
+
+.texto-info h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.texto-info p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.miniaturas {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.miniaturas button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.miniaturas img {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: transform 0.2s;
+}
+
+.miniaturas img:hover {
+  transform: scale(1.1);
+  border-color: #aaa;
+}
