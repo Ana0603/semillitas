@@ -1,0 +1,10 @@
+<div class="registro-container">
+  <h2>¡Crea tu cuenta!</h2>
+  <form (ngSubmit)="crearCuenta()" #registroForm="ngForm">
+    <input type="text" name="nombre" [(ngModel)]="nombre" placeholder="Tu nombre" required>
+    <input type="number" name="edad" [(ngModel)]="edad" placeholder="Tu edad" min="4" max="12" required>
+    <input type="password" name="contrasena" [(ngModel)]="contrasena" placeholder="Elige una contraseña" required>
+    <input type="email" name="correoFamiliar" [(ngModel)]="correoFamiliar" placeholder="Correo de tu familiar" required>
+    <button type="submit" routerLink="/inicio">Iniciar juego</button>
+  </form>
+</div>

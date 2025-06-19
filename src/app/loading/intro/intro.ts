@@ -12,7 +12,7 @@ export class Intro {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.router.navigate(['/inicio']);
+      this.router.navigate(['/crear-cuenta']);
     }, 68000);   
   }
 } 
