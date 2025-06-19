@@ -1,0 +1,16 @@
+.fondo-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  background-color: #fff9f3;
+  padding: 20px;
+  width: 300vh;
+  max-width: 40vh;
+  height: 80vh;
+  border-radius: 20px;
+  justify-content: space-between;
+}
