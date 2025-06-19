@@ -6,10 +6,12 @@ import {Vestuario} from './pages/vestuario/vestuario';
 import {Colecciones} from './pages/colecciones/colecciones';
 import { LoadingIngreso } from './loading/loading-ingreso/loading-ingreso';
 import { LoadingMinijuego } from './loading/minijuego/minijuego';
+import { Intro } from './loading/intro/intro';
 
 export const routes: Routes = [
     { path: '', component: Ingreso },
     { path: 'cargando', component: LoadingIngreso },
+    { path: 'intro', component: Intro },
     { path: 'inicio', component: Inicio },
     { 
         path: 'mini-juego', 

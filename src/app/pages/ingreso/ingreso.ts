@@ -17,4 +17,8 @@ export class Ingreso implements AfterViewInit {
   irAInicio() {
     this.router.navigate(['/cargando']);
   }
-}
+
+  irAIntro() {
+    this.router.navigate(['/intro']);
+  }
+} 

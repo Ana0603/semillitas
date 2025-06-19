@@ -20,4 +20,4 @@ describe('Ingreso', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
+}); 
