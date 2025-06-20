@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { AudioService } from '../../componentes/audio/audio';
 
 @Component({
   selector: 'app-crear-semilla',
@@ -9,6 +10,9 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./crear-semilla.css']
 })
 export class CrearSemilla {
+
+  constructor(public audioService: AudioService) {}
+
   currentSlide = 0;
 
   slides = [
@@ -46,4 +50,4 @@ export class CrearSemilla {
   prevSlide() {
     this.currentSlide = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
   }
-}
+} 

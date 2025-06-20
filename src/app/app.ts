@@ -18,11 +18,15 @@ export class App {
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: any) => {
         const url = event.urlAfterRedirects;
-        if (url.includes('/loading/intro')) {
+        if (url.includes('/intro')) {
           this.audioService.pause();
         } else {
           this.audioService.play();
         }
       });
+       const initialUrl = this.router.url;
+    if (!initialUrl.includes('/loading/intro')) {
+      this.audioService.play();
+    }
   }
 }

@@ -1,5 +1,7 @@
 import { Component, AfterViewInit, ElementRef, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
+import { AudioService } from '../../componentes/audio/audio';
+
 
 @Component({
   selector: 'app-ingreso',
@@ -9,7 +11,7 @@ import { Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None,
 })
 export class Ingreso implements AfterViewInit {
-  constructor(private elRef: ElementRef, private router: Router) {}
+  constructor(private elRef: ElementRef, private router: Router,public audioService: AudioService) {}
 
   ngAfterViewInit(): void {
   }

@@ -19,4 +19,12 @@ export class AudioService {
   pause() {
     this.audio.pause();
   }
+
+  playButtonSound() {
+  const clickAudio = new Audio('assets/img/btnsonido.mp3');
+  clickAudio.volume = 0.7;
+  clickAudio.play().catch(err => {
+    console.warn('El navegador bloqueó el sonido del botón:', err);
+  });
+}
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AudioService } from '../../componentes/audio/audio';
 
 @Component({
   selector: 'app-crear-cuenta',
@@ -16,7 +17,7 @@ export class CrearCuenta {
   contrasena: string = '';
   correoFamiliar: string = '';
 
-    constructor(private router: Router) {}
+    constructor(private router: Router, public audioService: AudioService) {}
 
   crearCuenta() {
     console.log('Cuenta creada:', {
@@ -30,4 +31,4 @@ export class CrearCuenta {
 
     this.router.navigate(['/crear-semilla']); 
   }
-}
+} 
