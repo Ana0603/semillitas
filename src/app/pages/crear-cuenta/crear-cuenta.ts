@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Router, RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-crear-cuenta',
-  imports: [FormsModule, RouterModule],
+  imports: [FormsModule],
   templateUrl: './crear-cuenta.html',
   styleUrl: './crear-cuenta.css'
 })
@@ -16,6 +16,8 @@ export class CrearCuenta {
   contrasena: string = '';
   correoFamiliar: string = '';
 
+    constructor(private router: Router) {}
+
   crearCuenta() {
     console.log('Cuenta creada:', {
       nombre: this.nombre,
@@ -24,6 +26,8 @@ export class CrearCuenta {
       correoFamiliar: this.correoFamiliar
     });
 
-    alert('¡Cuenta creada con éxito!');
+    console.log('Cuenta creada:', this.nombre, this.edad);
+
+    this.router.navigate(['/crear-semilla']); 
   }
 }

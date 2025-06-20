@@ -14,8 +14,8 @@ import { CrearSemilla } from './pages/crear-semilla/crear-semilla';
 export const routes: Routes = [
     { path: '', component: Ingreso },
     { path: 'cargando', component: LoadingIngreso },
+    { path: 'inicio', component: Inicio },
     { path: 'intro', component: Intro },
-    { path: 'crear-cuenta', component: CrearCuenta },
     { path: 'crear-cuenta', component: CrearCuenta },
     { path: 'crear-semilla', component: CrearSemilla },
     { 

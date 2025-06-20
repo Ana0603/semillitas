@@ -1,5 +1,22 @@
 <div class="fondo-inicio">
     <div class="container">
         <h2>¡Selecciona una semilla!</h2>
+        <div class="slider-container">
+            <div class="slide" [ngStyle]="{'background-image': 'url(' + slides[currentSlide].imageUrl + ')'}">
+                <div class="overlay-card">
+                    <h2>{{ slides[currentSlide].title }}</h2>
+                    <p>{{ slides[currentSlide].description }}</p>
+                </div>
+                <div class="controls">
+                    <button (click)="prevSlide()">&#8592;</button>
+                <div class="dots">
+                    <span *ngFor="let slide of slides; let i = index"
+                        [class.active]="i === currentSlide"></span>
+                </div>
+                    <button (click)="nextSlide()">&#8594;</button>
+                </div>
+            </div>
+        </div>
+        <button class="button-55" role="button" routerLink="/cargando">Iniciar historia</button>
     </div>
 </div>
