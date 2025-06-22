@@ -43,10 +43,14 @@ header {
 }
 
 .galeria-container {
+  background-color: bisque;
+    border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  max-height: 550px; 
+  overflow-y: auto;
 }
 
 .imagen-principal {
@@ -54,7 +58,7 @@ header {
   gap: 20px;
   align-items: center;
   margin-bottom: 20px;
-  background: #fef9f0;
+  background: #fff4e1;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -105,4 +109,53 @@ header {
 .miniaturas img:hover {
   transform: scale(1.1);
   border-color: #aaa;
+}
+
+.container .comprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button55 {
+  align-self: center;
+  background-color: #bfdd8f;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #3b2906;
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: popins, sans-serif;
+  font-size: 1.5rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-radius: 15px 225px 255px 15px;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 20px;
+}
+
+.button55:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button55:focus {
+  box-shadow: rgba(34, 5, 5, 0.356) 2px 8px 4px -6px;
 }

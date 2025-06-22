@@ -11,34 +11,46 @@ import { CommonModule } from '@angular/common';
 export class Colecciones {
   imagenes = [
     {
+  src: 'assets/img/misiones5.png',
+  titulo: 'Primer vuelo',
+  descripcion: 'Accede al mini juego por primera vez.',
+  fecha: '💰 100pts'
+},
+    {
       src: 'assets/img/mision1.png',
-      titulo: 'Completa el capitulo 1',
-      descripcion: 'Completa todo el capitulo 1 para que tu semilla crezca.',
-      fecha: '2022-10-11'
+      titulo: 'Historias de luz',
+      descripcion: 'Completa todas las historias del capitulo 1.',
+      fecha: '💰 150pts'
     },
     {
-      src: 'assets/img/mision2.png',
-      titulo: 'Criatura del pantano',
-      descripcion: 'Una rara especie en su hábitat natural.',
-      fecha: '2022-10-12'
+      src: 'assets/img/misiones8.png',
+      titulo: 'Bosque encantado',
+      descripcion: 'Completa todas las historias del capitulo 2.',
+      fecha: '💰 300pts'
     },
     {
       src: 'assets/img/misiones4.png',
-      titulo: 'Bosque encantado',
-      descripcion: 'Paisaje con flora exótica y niebla mágica.',
-      fecha: '2022-10-13'
+      titulo: 'Bien alimentada',
+      descripcion: 'Riega tu semilla 10 veces.',
+      fecha: '💰 320pts'
     },
     {
-      src: 'assets/img/misiones5.png',
-      titulo: 'Templo del Fuego',
-      descripcion: 'Ruinas de un templo ancestral bajo erupción.',
-      fecha: '2022-10-14'
+      src: 'assets/img/misiones7.png',
+      titulo: 'Nueva florecita',
+      descripcion: 'Haz que tu semilla crezca como una florecita.',
+      fecha: '💰 400pts'
+    },
+    {
+      src: 'assets/img/mision2.png',
+      titulo: 'Islas mágicas',
+      descripcion: 'Completa todas las historias del capitulo 3.',
+      fecha: '💰 480pts'
     },
     {
       src: 'assets/img/misiones6.png',
-      titulo: 'Encuentro con el jefe',
-      descripcion: 'Momento previo a una gran batalla.',
-      fecha: '2022-10-15'
+      titulo: 'Reparadores',
+      descripcion: 'Completa todas las historias del capitulo 4.',
+      fecha: '💰 700pts'
     }
   ];
 
