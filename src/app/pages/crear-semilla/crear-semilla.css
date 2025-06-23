@@ -91,6 +91,8 @@
 h2 {
   margin-top: 20px;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .button-55 {
@@ -108,7 +110,7 @@ h2 {
   margin: 10px;
   cursor: pointer;
   display: inline-block;
-  font-family: popins, sans-serif;
+  font-family: 'Comic Neue', sans-serif;
   font-size: 1.5rem;
   line-height: 23px;
   outline: none;
@@ -125,6 +127,7 @@ h2 {
   touch-action: manipulation;
   margin-top: 20px;
   margin-bottom: 40px;
+  font-weight: bold;
 }
 
 .button-55:hover {

@@ -5,12 +5,12 @@
           <h2 class="title">Colecciones</h2>
         </div>
         <div class="button-container">
-          <button routerLink="/inicio" class="close-button">X</button>
+          <button routerLink="/inicio" class="close-button" (click)="audioService.playButtonSound()">X</button>
         </div>
       </div>
 
-    <div class="galeria-container">
-      <h2>{{ seleccionada.titulo }}</h2>
+    <div class="galeria-container" (click)="audioService.playButtonSound()">
+      <h2>{{ seleccionada.titulo }}</h2> 
       <div class="imagen-principal">
         
         <img [src]="seleccionada.src" alt="Imagen seleccionada" />
@@ -30,7 +30,7 @@
 
     <div class="comprar">
       <p>✨ Comparte tu progreso con tus amigos ✨</p>
-      <button class="button55" type="submit">Compartir</button>
+      <button class="button55" type="submit" (click)="audioService.playButtonSound()">Compartir</button>
     </div>
   </div>
 </div>

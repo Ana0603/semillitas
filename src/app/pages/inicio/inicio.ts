@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { NavegacionComponent, } from '../../componentes/navegacion/navegacion';
 import { SharedService } from '../../services/shared.service';
 import { Misiones } from '../../componentes/misiones/misiones';
+import { AudioService } from '../../componentes/audio/audio';
 
 @Component({
   selector: 'app-inicio',
@@ -19,7 +20,7 @@ export class Inicio {
   isDarkMode = false;
   mostrarMisiones = false;
 
-  constructor(private sharedService: SharedService) { } 
+  constructor(private sharedService: SharedService, public audioService: AudioService) { } 
 
   ngOnInit() {
     this.sharedService.currentImage.subscribe(image => {

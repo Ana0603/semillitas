@@ -4,5 +4,22 @@ html, body{
   justify-content: center;
   align-items: center;
   height: 100%; 
-  font-family: sans-serif;
+  font-family: 'Comic Neue', sans-serif;
+  color: #3e2a1a;
+}
+
+h1 {
+  color: #2a5d34; 
+  font-size: 2.2rem;
+}
+
+h2, h3 {
+  color: #8d6b3d; 
+}
+
+p {
+  color: #3e2a1a; 
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: bold;
 }

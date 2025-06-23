@@ -5,7 +5,7 @@
   height: 100%;  
 }
 
-.container2 {
+.container2 { 
   background: rgb(250, 255, 246);
   position: relative;
   padding: 20px;
@@ -70,7 +70,7 @@ p {
 }
 
 .level-button {
-  width: 75px;
+  width: 81px;
   height: 50px;
   border-radius: 10px;
   font-size: 1.4rem;
@@ -80,6 +80,9 @@ p {
   cursor: pointer;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-family: 'Comic Neue', sans-serif;
 }
 
 .level-button:hover {

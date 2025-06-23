@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { AudioService } from '../../componentes/audio/audio';
 
 @Component({
   selector: 'app-colecciones',
@@ -8,7 +9,10 @@ import { CommonModule } from '@angular/common';
   templateUrl: './colecciones.html',
   styleUrl: './colecciones.css'
 })
-export class Colecciones {
+export class Colecciones { 
+
+  constructor(public audioService: AudioService) {}
+
   imagenes = [
     {
   src: 'assets/img/misiones5.png',

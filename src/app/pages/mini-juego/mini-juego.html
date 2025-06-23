@@ -6,7 +6,7 @@
         <p>Capitulo actual:1</p>
       </div>
       <div class="button-container">
-        <button routerLink="/inicio" class="close-button">X</button>
+        <button routerLink="/inicio" class="close-button" (click)="audioService.playButtonSound()">X</button>
       </div>
     </div>
       
@@ -17,6 +17,7 @@
             [routerLink]="[cap.route]"
             fill="solid"
             class="level-button"
+            (click)="audioService.playButtonSound()"
           >
             {{ cap.numero }}
           </button>

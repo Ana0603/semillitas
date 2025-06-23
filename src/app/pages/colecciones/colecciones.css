@@ -26,6 +26,7 @@ header {
 .title {
   font-weight: bold;
   margin-left: 20px;
+  font-size: 25px;
 }
 
 .close-button {
@@ -133,7 +134,7 @@ header {
   margin: 10px;
   cursor: pointer;
   display: inline-block;
-  font-family: popins, sans-serif;
+  font-family: 'Comic Neue', sans-serif;
   font-size: 1.5rem;
   line-height: 23px;
   outline: none;
@@ -149,6 +150,7 @@ header {
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .button55:hover {

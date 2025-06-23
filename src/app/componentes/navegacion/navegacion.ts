@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SharedService } from '../../services/shared.service';
 import { Router, RouterModule } from '@angular/router';
+import { AudioService } from '../../componentes/audio/audio';
 
 @Component({
   selector: 'app-navegacion',
@@ -10,7 +11,7 @@ import { Router, RouterModule } from '@angular/router';
   styleUrls: ['./navegacion.css'],
 })
 export class NavegacionComponent {
-  constructor(private sharedService: SharedService, private router: Router) {}
+  constructor(private sharedService: SharedService, private router: Router, public audioService: AudioService) {}
 
   cambiarImagen() {
     this.sharedService.changeImage('assets/img/animate3.gif');
@@ -22,4 +23,4 @@ export class NavegacionComponent {
   irAMinijuego() {
     this.router.navigate(['/loading-minijuego']);
   }
-}
+} 

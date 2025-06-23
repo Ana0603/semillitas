@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { AudioService } from '../../componentes/audio/audio';
 
 @Component({
   selector: 'app-mini-juego',
@@ -19,7 +20,7 @@ export class MiniJuego {
   { numero: '04', titulo: '', route: 'nivel4' },
 ];
 
-constructor() { }
+constructor(public audioService: AudioService) {}
 
 ngOnInit() {
 }

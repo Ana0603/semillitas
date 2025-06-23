@@ -27,7 +27,7 @@
 
 .subtitulo {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 40px;
   color: #3b2906;
 }
@@ -37,7 +37,7 @@
   padding: 15px;
   margin: 20px auto;
   font-size: 1rem;
-  color: #41403e;
+  color: #116800;
   background-color: #fff;
   border: 2px solid #3b2906;
   border-radius: 15px 225px 255px 15px;
@@ -49,6 +49,7 @@
   transition: all 235ms ease-in-out;
   outline: none;
   display: block;
+  font-family: 'Comic Neue', sans-serif;
 }
 
 .input-item:focus {
@@ -77,7 +78,7 @@
   margin: 10px;
   cursor: pointer;
   display: inline-block;
-  font-family: popins, sans-serif;
+  font-family: 'Comic Neue', sans-serif;
   font-size: 1.5rem;
   line-height: 23px;
   outline: none;
@@ -93,6 +94,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .button-55:hover {

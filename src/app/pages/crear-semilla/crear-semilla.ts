@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AudioService } from '../../componentes/audio/audio';
 
-@Component({
+@Component({ 
   selector: 'app-crear-semilla',
   imports: [RouterModule, CommonModule,],
   templateUrl: './crear-semilla.html',

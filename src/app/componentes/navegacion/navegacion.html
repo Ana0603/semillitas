@@ -1,15 +1,15 @@
 <div class="footer">
   <div class="bottom-nav">
-    <div class="nav-btn" (click)="irAMinijuego()" fill="clear">
+    <div class="nav-btn" (click)="irAMinijuego()" (click)="audioService.playButtonSound()" fill="clear">
       <img src="assets/img/nav1.png" alt="Minijuego" />
     </div>
-    <div class="nav-btn" routerLink="/vestuario" fill="clear" >
+    <div class="nav-btn" routerLink="/vestuario" (click)="audioService.playButtonSound()" fill="clear" >
       <img src="assets/img/nav2.png" alt="Tienda" />
     </div>
-    <div class="nav-btn" routerLink="/colecciones" fill="clear" >
+    <div class="nav-btn" routerLink="/colecciones" (click)="audioService.playButtonSound()" fill="clear" >
       <img src="assets/img/nav3.png" alt="Colección" />
     </div>
-    <div class="nav-btn" (click)="cambiarImagen()">
+    <div class="nav-btn" (click)="cambiarImagen()" (click)="audioService.playButtonSound()">
       <img src="assets/img/nav4.png" alt="Comida" />
     </div>
   </div>
