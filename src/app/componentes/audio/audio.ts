@@ -22,7 +22,7 @@ export class AudioService {
 
   playButtonSound() {
   const clickAudio = new Audio('assets/img/btnsonido.mp3');
-  clickAudio.volume = 0.7;
+  clickAudio.volume = 0.5;
   clickAudio.play().catch(err => {
     console.warn('El navegador bloqueó el sonido del botón:', err);
   });

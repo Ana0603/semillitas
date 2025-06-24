@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
+ 
 @Component({
   selector: 'app-intro',
   imports: [],
@@ -16,3 +16,4 @@ export class Intro {
     }, 68500);   
   }
 } 
+ 

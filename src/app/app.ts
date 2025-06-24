@@ -14,18 +14,21 @@ export class App {
   protected title = 'app-semillita';
 
   constructor(private router: Router, private audioService: AudioService) {
+    // Detectar cambios de ruta y controlar el audio
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: any) => {
         const url = event.urlAfterRedirects;
-        if (url.includes('/intro')) {
+        if (url.includes('/loading/juego1')) {
           this.audioService.pause();
         } else {
           this.audioService.play();
         }
       });
-       const initialUrl = this.router.url;
-    if (!initialUrl.includes('/loading/intro')) {
+
+    // Revisar la URL inicial
+    const initialUrl = this.router.url;
+    if (!initialUrl.includes('/loading/juego1')) {
       this.audioService.play();
     }
   }

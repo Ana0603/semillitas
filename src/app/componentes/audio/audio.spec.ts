@@ -1,23 +1,18 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { TestBed } from '@angular/core/testing';
+import { AudioService } from './audio';
 
-import { Audio } from './audio';
+describe('AudioService', () => {
+  let service: AudioService;
 
-describe('Audio', () => {
-  let component: Audio;
-  let fixture: ComponentFixture<Audio>;
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      providers: [AudioService]
+    });
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [Audio]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(Audio);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    service = TestBed.inject(AudioService);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should be created', () => {
+    expect(service).toBeTruthy();
   });
 });

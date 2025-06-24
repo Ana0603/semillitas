@@ -1,0 +1,25 @@
+.fondo-inicio {
+    --background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;  
+}
+
+.loading-container {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 90%;
+  height: 80vh;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;            
+
+  img {
+    width: 100%; 
+    height: auto;
+  }
+}

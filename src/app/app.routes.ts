@@ -9,6 +9,9 @@ import { LoadingMinijuego } from './loading/minijuego/minijuego';
 import { Intro } from './loading/intro/intro';
 import { CrearCuenta } from './pages/crear-cuenta/crear-cuenta';
 import { CrearSemilla } from './pages/crear-semilla/crear-semilla';
+import { LoadingJuego1 } from './loading/juego1/juego1';
+import { MiniJuego } from './pages/mini-juego/mini-juego';
+import { Juego1 } from './pages/mini-juego/juego/juego1';
 
 
 export const routes: Routes = [
@@ -23,6 +26,9 @@ export const routes: Routes = [
         loadChildren: () => import('./pages/mini-juego/mini-juego.routes').then(m => m.routes) 
     },
     { path: 'loading-minijuego', component: LoadingMinijuego },
+    { path: 'mini-juego', component: MiniJuego },
+    { path: 'loading/juego1', component: LoadingJuego1 },
+    { path: 'juego/juego1', component: Juego1 },
     { path: 'vestuario', component: Vestuario },
     { path: 'colecciones', component: Colecciones },
 ];
