@@ -14,7 +14,7 @@ export class  LoadingJuego1 {
   ngOnInit(): void {
     setTimeout(() => {
       this.router.navigate(['juego/juego1']);
-    }, 28500);   
+    }, 51000);   
   }
 } 
  
